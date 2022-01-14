@@ -59,7 +59,7 @@
 
 # CloudFlare Workers反代代码（从以下3个示例中选择其中1个部署到CF Workers）
 
-示例1(适用单一应用的反代代码)
+示例1：(适用单一应用的反代代码)
 ```
 addEventListener(
   "fetch", event => {
@@ -73,7 +73,7 @@ addEventListener(
 )
 ```
 
-示例2(适用单双日循环执行的反代代码)
+示例2：(适用单双日循环执行的反代代码)
 ```
 const SingleDay = 'appname.herokuapp.com'
 const DoubleDay = 'appname.herokuapp.com'
@@ -97,7 +97,7 @@ addEventListener(
 )
 ```
 
-示例3(适用多实例循环执行的反代代码)
+示例3：(适用多实例循环执行的反代代码)
 ```
 const Day0 = 'app0.herokuapp.com'
 const Day1 = 'app1.herokuapp.com'

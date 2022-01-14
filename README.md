@@ -4,6 +4,8 @@
 
 |**注意事项**|
 |:---------|
+|**因使用本项目执行其他活动所产生的所有后果本项目概不负责！！！！**|
+|**禁止向任何网站转发本项目！！！！**|
 |**注意项目名字中不要包含Shadowsocks（ss）、VLESS、VMESS、Trojan（tj）、Xray、V2ray**|
 |**如果能继续使用的，请保持低调！！！**|
 |**滥用可能导致账户被删除！！！**|
@@ -23,11 +25,11 @@
 |**加密**|none|
 |**传输协议**|ws|
 |**伪装类型**|none|
-|**伪装域名**|xxxx.workers.dev()<br>应用名.heroku.com|
-|**路径**|/UUID-vless|
+|**伪装域名**|xxxx.workers.dev(CF Workers反代地址)<br>应用名.heroku.com|
+|**路径**|/ID-vless|
 |**底层传输安全**|tls|
 |**跳过证书验证**|false|
-|**SNI**|xxxx.workers.dev()<br>应用名.heroku.com|
+|**SNI**|xxxx.workers.dev(CF Workers反代地址)<br>应用名.heroku.com|
 
 # Xray/V2Ray Trojan
 |**属性**|**值**|
@@ -39,9 +41,19 @@
 |**加密**|none|
 |**传输协议**|ws|
 |**伪装类型**|none|
-|**伪装域名**|xxxx.workers.dev()<br>应用名.heroku.com|
-|**路径**|/UUID-trojan|
+|**伪装域名**|xxxx.workers.dev(CF Workers反代地址)<br>应用名.heroku.com|
+|**路径**|/ID-trojan|
 |**底层传输安全**|tls|
 |**跳过证书验证**|false|
-|**SNI**|xxxx.workers.dev()<br>应用名.heroku.com|
+|**SNI**|xxxx.workers.dev(CF Workers反代地址)<br>应用名.heroku.com|
+
+# Trojan Ws+Tls客户端支持状态
+|**客户端**|**是否支持Trojan Ws+Tls？**|
+|:--------:|:------------------------:|
+|**2dust V2RayN<br>2dust V2RayNG**|是，需要电脑端4.27以上版本且有.net framework 6.0及更高版本<br>手机端敬请期待|
+|**OpenWrt SSRPlus**|是|
+|**OpenWrt SSRPlus**|是，需要最新版本passwall|
+|~~**QV2Ray**~~|~~否~~|
+
+# CloudFlare Workers反代代码
 

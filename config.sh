@@ -65,8 +65,8 @@ cat << EOF > /usr/local/etc/xray/config.json
             "protocol": "shadowsocks",
             "settings": {
                 "email": "love@v2fly.org",
-                "method": "$ParameterSSENCYPT",
-                "password":"chacha20-ietf-poly1305",
+                "method": "chacha20-ietf-poly1305",
+                "password":"$ID",
                 "network": "tcp,udp",
                 "ivCheck": true
             },
@@ -74,7 +74,7 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/$AUUID-ss"
+                    "path": "/$ID-ss"
                 }
             }
         }

@@ -1,4 +1,4 @@
-# IX-RXV2
+# IX-RXVK
 
 # 概述
 本项目用于在 Heroku 上部署 V2Ray/Xray WebSocket，在合理使用的程度下，本镜像不会因为大量占用资源而导致封号。

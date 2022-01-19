@@ -59,6 +59,24 @@ cat << EOF > /usr/local/etc/xray/config.json
                   "path": "/$ID-trojan"
                 }
             }
+        },
+        {   
+            "port": ${PORT},
+            "protocol": "shadowsocks",
+            "settings": {
+                "email": "love@v2fly.org",
+                "method": "$ParameterSSENCYPT",
+                "password":"chacha20-ietf-poly1305",
+                "network": "tcp,udp",
+                "ivCheck": true
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/$AUUID-ss"
+                }
+            }
         }
     ],
     "routing": {

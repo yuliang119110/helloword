@@ -1,4 +1,4 @@
-# IX-RXVK
+# IX-RXVT
 
 # 概述
 本项目用于在 Heroku 上部署 V2Ray/Xray WebSocket，在合理使用的程度下，本镜像不会因为大量占用资源而导致封号。
@@ -20,7 +20,7 @@
 |**带有删除线的部分表示不适用或已经废弃。**|
 |**目前heroku只支持http1.1，请不要再问是否支持tcp等其他协议。**|
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Cptmacmillan2022007/IX-RXVK.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Cptmacmillan2022007/IX-RXVT.git)
 
 # Xray/V2Ray VLESS
 |**属性**|**值**|

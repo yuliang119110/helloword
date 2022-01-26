@@ -82,7 +82,7 @@ cat << EOF > /usr/local/etc/xray/config.json
         {
             "protocol": "freedom",
             "settings": {
-               "domainStrategy": "UseIPv4",
+               "domainStrategy": "UseIP",
                "userLevel": 0
             }
         },

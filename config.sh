@@ -80,7 +80,7 @@ cat << EOF > /usr/local/etc/xray/config.json
     },
     "outbounds": [
         {
-            "protocol": "freedom",
+            "protocol": "freedom"
         },
         {
             "protocol": "blackhole",

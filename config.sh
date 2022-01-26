@@ -100,6 +100,8 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "skipFallback": true
             }
         ],
+        "queryStrategy": "UseIP",
+        "disableCache": true,
         "disableFallbackIfMatch": false
     }
 }

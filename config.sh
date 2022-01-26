@@ -81,24 +81,12 @@ cat << EOF > /usr/local/etc/xray/config.json
     "outbounds": [
         {
             "protocol": "freedom",
-            "settings": {
-               "domainStrategy": "UseIPv4"
-            }
         },
         {
             "protocol": "blackhole",
             "tag": "blocked"
         }
-    ],
-    "dns": {
-        "servers": [
-            "https://dns.google/dns-query",
-            "https://cloudflare-dns.com/dns-query"
-        ],
-        "queryStrategy": "UseIPv4",
-        "disableCache": true,
-        "disableFallbackIfMatch": false
-    }
+    ]
 }
 EOF
 

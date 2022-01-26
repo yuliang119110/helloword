@@ -82,8 +82,7 @@ cat << EOF > /usr/local/etc/xray/config.json
         {
             "protocol": "freedom",
             "settings": {
-               "domainStrategy": "UseIP",
-               "userLevel": 0
+               "domainStrategy": "UseIPv4"
             }
         },
         {
@@ -92,15 +91,11 @@ cat << EOF > /usr/local/etc/xray/config.json
         }
     ],
     "dns": {
-        "network": "tcp",
         "servers": [
-            {
-                "address": "https://dns.google/dns-query",
-                "address": "https://cloudflare-dns.com/dns-query",
-                "skipFallback": true
-            }
+            "https://dns.google/dns-query",
+            "https://cloudflare-dns.com/dns-query"
         ],
-        "queryStrategy": "UseIP",
+        "queryStrategy": "UseIPv4",
         "disableCache": true,
         "disableFallbackIfMatch": false
     }

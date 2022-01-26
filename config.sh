@@ -92,6 +92,7 @@ cat << EOF > /usr/local/etc/xray/config.json
         }
     ],
     "dns": {
+        "network": "tcp",
         "servers": [
             {
                 "address": "https://dns.google/dns-query",

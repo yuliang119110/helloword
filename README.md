@@ -61,7 +61,7 @@
 |:--------:|:------------------------:|
 |**2dust V2RayN<br>2dust V2RayNG**|是，需要电脑端4.27以上版本且有.net framework 6.0及更高版本<br>手机端敬请期待|
 |**OpenWrt SSRPlus**|是|
-|**OpenWrt SSRPlus**|是，需要最新版本passwall|
+|**OpenWrt Passwall**|是，需要最新版本passwall|
 |~~**QV2Ray**~~|~~否~~|
 
 # CloudFlare Workers反代代码（从以下3个示例中选择其中1个部署到CF Workers）

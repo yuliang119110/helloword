@@ -101,7 +101,7 @@ cat << EOF > /usr/local/etc/xray/config.json
         ],
         "queryStrategy": "UseIPv4",
         "disableCache": true,
-        "disableFallbackIfMatch": false
+        "disableFallbackIfMatch": true
     }
 }
 EOF

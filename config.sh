@@ -37,6 +37,13 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "wsSettings": {
                   "path": "/$ID-vless"
                 }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                     "http",
+                     "tls"
+                ]
             }
         },
         {   
@@ -58,6 +65,13 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "wsSettings": {
                   "path": "/$ID-trojan"
                 }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                     "http",
+                     "tls"
+                ]
             }
         }
     ],

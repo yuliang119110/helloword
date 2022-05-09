@@ -20,6 +20,25 @@ cat << EOF > /usr/local/etc/xray/config.json
     "inbounds": [
         {   
             "port": ${PORT},
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "$ID"
+                    }
+                ],
+                "disableInsecureEncryption": true
+            },
+            "streamSettings": {
+                "network": "ws",
+                "allowInsecure": false,
+                "wsSettings": {
+                  "path": "/$ID-vmess"
+                }
+            }
+        },
+        {   
+            "port": ${PORT},
             "protocol": "vless",
             "settings": {
                 "clients": [
@@ -37,13 +56,6 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "wsSettings": {
                   "path": "/$ID-vless"
                 }
-            },
-            "sniffing": {
-                "enabled": true,
-                "destOverride": [
-                     "http",
-                     "tls"
-                ]
             }
         },
         {   
@@ -65,13 +77,6 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "wsSettings": {
                   "path": "/$ID-trojan"
                 }
-            },
-            "sniffing": {
-                "enabled": true,
-                "destOverride": [
-                     "http",
-                     "tls"
-                ]
             }
         }
     ],

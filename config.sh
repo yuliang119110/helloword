@@ -18,7 +18,7 @@ cat << EOF > /usr/local/etc/xray/config.json
         "loglevel": "none"
     },
     "inbounds": [
-        {   
+        {
             "port": ${PORT},
             "protocol": "vmess",
             "settings": {
@@ -33,18 +33,18 @@ cat << EOF > /usr/local/etc/xray/config.json
                 "network": "ws",
                 "allowInsecure": false,
                 "wsSettings": {
-                  "path": "/$ID-vmess"
+                    "path": "/$ID-vmess"
                 }
             },
             "sniffing": {
                 "enabled": true,
                 "destOverride": [
-                     "http",
-                     "tls"
+                    "http",
+                    "tls"
                 ]
             }
         },
-        {   
+        {
             "port": ${PORT},
             "protocol": "vless",
             "settings": {
@@ -72,7 +72,7 @@ cat << EOF > /usr/local/etc/xray/config.json
                 ]
             }
         },
-        {   
+        {
             "port": ${PORT},
             "protocol": "trojan",
             "settings": {

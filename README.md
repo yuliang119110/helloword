@@ -147,3 +147,4 @@ addEventListener(
 - [heroku-vless](https://github.com/DanyTPG/heroku-vless.git)
 - [Better Cloudflare IP](https://github.com/badafans/better-cloudflare-ip.git)
 - [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest.git)
+- [CloudflareSpeedTest-Rust](https://github.com/lixiang810/CloudflareSpeedTest-Rust.git)
